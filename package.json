@@ -8,6 +8,7 @@
     "watch": "nodemon --exec electron .",
     "reset": "git reset --hard",
     "build": "electron-builder -w",
+    "release": "electron-builder -w -p onTagOrDraft",
     "win-cert": "electron-builder create-self-signed-cert -p abuCertificate"
   },
   "repository": "https://github.com/Mohammed-Abubakar-11786/ReadIt-Bookmarks",
@@ -30,6 +31,9 @@
   "build": {
     "appId": "com.abubakar.readit",
     "copyright": "copyright abubakar",
+    "publish": {
+      "provider": "github"
+    },
     "mac": {
       "category": "public.app-category.productivity",
       "target": "dmg"
