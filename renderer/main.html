@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- !! IMPORTANT !! -->
+    <!-- Content-Security-Policy no longer required. Will show warning in devtools. Can be ignored -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"> -->
+    <title>Readit</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Include jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <button id="add-modal">+</button>
+      <input id="search" type="search" placeholder="search" />
+    </header>
+
+    <main>
+      <p id="no-items">No Items</p>
+      <div id="items">
+        <!-- <div class="read-items">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1669863280125-7789ef60adc0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <h2>sample title</h2>
+        </div> -->
+      </div>
+    </main>
+
+    <div id="model">
+      <input id="newURL" type="text" placeholder="Enter URL" />
+      <button id="add-item">Add Item</button>
+      <button id="close-model">Cancel</button>
+    </div>
+
+    <script>
+      // You can also require other files to run in this process
+      require("./app.js");
+    </script>
+  </body>
+</html>
